@@ -55,9 +55,10 @@ Plug 'tpope/vim-haml'
 Plug 'mattn/emmet-vim'
 
 Plug 'hail2u/vim-css3-syntax'
-Plug 'ap/vim-css-color'         " hex colors
+Plug 'ap/vim-css-color'             " hex colors
 
 Plug 'pangloss/vim-javascript'
+Plug 'mlaursen/vim-react-snippets'
 
 " vim-lsp
 Plug 'prabirshrestha/vim-lsp'
@@ -136,6 +137,9 @@ let g:session_directory = "~/.vim/session"
 let g:session_autoload = "no"
 let g:session_autosave = "no"
 let g:session_command_aliases = 1
+
+" utilsnips
+let g:UltiSnipsExpandTrigger="<tab>"
 
 " vim-airline
 let g:airline_theme = 'minimalist'
