@@ -252,9 +252,9 @@ if executable('typescript-language-server')
         \               lsp#utils#get_buffer_path(),
         \               ['index.html']
         \       ))},
-        \ 'allowlist': ['javascript', 'javascript.jsx', 'typescript', 'typescript.jsx'],
+        \ 'allowlist': ['typescript', 'javascript','javascriptreact','typescript.jsx', 'javascript.jsx'],
         \ })
-    autocmd FileType typescript,typescript.jsx,javascript,javascript.jsx setlocal omnifunc=lsp#complete
+    autocmd FileType typescript,javascript,javascriptreact,typescript.jsx,javascript.jsx setlocal omnifunc=lsp#complete
 endif
 
 function! s:on_lsp_buffer_enabled() abort
