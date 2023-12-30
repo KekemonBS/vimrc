@@ -44,6 +44,7 @@ Plug 'ludwig/split-manpage.vim'
 
 " go
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
+Plug 'buoto/gotests-vim' " generate table tests
 
 " lua
 Plug 'xolox/vim-lua-ftplugin'
