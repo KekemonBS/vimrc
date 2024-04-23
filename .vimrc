@@ -64,6 +64,10 @@ Plug 'mlaursen/vim-react-snippets'
 " vim-lsp
 Plug 'prabirshrestha/vim-lsp'
 
+
+"AI
+Plug 'Exafunction/codeium.vim' " free alternative to Copilot
+
 call plug#end()
 
 "-------------------------------------------------------------
@@ -175,7 +179,7 @@ autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 expandtab
 
 " go
 :call extend(g:ale_linters, {
-    \"go": ['golint', 'go vet'], })
+    \"go": ['golangci-lint', 'go vet', 'revive'], })
 
 "let g:go_fmt_autosave = 1
 let g:go_fmt_fail_silently = 1
@@ -291,3 +295,4 @@ augroup lsp_install
     " call s:on_lsp_buffer_enabled only for languages that has the server registered.
     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
+
