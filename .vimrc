@@ -25,6 +25,8 @@ Plug 'tpope/vim-rhubarb'      " required by fugitive to :Gbrowse
 Plug 'dense-analysis/ale'     " lint engine
 Plug 'tomasr/molokai'         " theme
 Plug 'junegunn/limelight.vim' " abstract
+
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
 Plug 'vim-airline/vim-airline'          " status bar
@@ -66,7 +68,7 @@ Plug 'prabirshrestha/vim-lsp'
 
 
 "AI
-Plug 'Exafunction/codeium.vim' " free alternative to Copilot
+"Plug 'Exafunction/codeium.vim' " free alternative to Copilot
 
 call plug#end()
 
@@ -75,7 +77,10 @@ call plug#end()
 " lag prevention
 set timeout timeoutlen=3000 ttimeoutlen=50  " set lower timeout
 set noswapfile                              " disable swp files
-  
+
+" allow backspace everywhere
+set backspace=indent,eol,start
+
 " encoding
 set encoding=utf-8 
 set fileencoding=utf-8
