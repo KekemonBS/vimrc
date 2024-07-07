@@ -63,6 +63,8 @@ Plug 'ap/vim-css-color'             " hex colors
 Plug 'pangloss/vim-javascript'
 Plug 'mlaursen/vim-react-snippets'
 
+Plug 'turbio/bracey.vim'            " live server (depends on npm and node)
+
 " vim-lsp
 Plug 'prabirshrestha/vim-lsp'
 
