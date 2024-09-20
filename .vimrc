@@ -116,7 +116,7 @@ set expandtab
 syntax on
 set ruler
 set number
-set relativenumber
+" set relativenumber
 
 " color
 let scheme_exists=expand('~/.vim/colors/molokai.vim')
