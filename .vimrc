@@ -79,6 +79,8 @@ call plug#end()
 " lag prevention
 set timeout timeoutlen=3000 ttimeoutlen=50  " set lower timeout
 set noswapfile                              " disable swp files
+set ttyfast                                 " more characters per update (more trafic, default: on)
+set nolazyredraw                            " refresh screen when needed (for macro replay, disabled)
 
 " allow backspace everywhere
 set backspace=indent,eol,start
@@ -87,8 +89,6 @@ set backspace=indent,eol,start
 set encoding=utf-8 
 set fileencoding=utf-8
 set fileencodings=utf-8
-set ttyfast
-
 
 " leader to ,
 let mapleader=','
